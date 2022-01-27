@@ -1,19 +1,21 @@
 import React from "react";
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-} from "react-router-dom";
-import Home from "./Components/Home";
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 function App() {
+    const [Greeting, setGreeting] = useState('');
+
+    useEffect(() => {
+        axios.get('/api')
+        .then(response => setGreeting(response.data))
+        .catch(error => console.log(error))
+    }, []);
+
     return (
-        // TODO: Home 페이지 라우팅이 되지 않고 index.html로 이동 중,
-        <Router>
-            <Routes>
-                <Route path="/" component={Home}/>
-            </Routes>
-        </Router>
+        <div>
+            여기는 리액트 페이지입니다.<br/>
+            {Greeting} 는 스프링에서 가져왔습니다
+        </div>
     );
 }
 
