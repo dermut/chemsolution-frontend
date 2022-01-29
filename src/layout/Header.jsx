@@ -11,13 +11,13 @@ function Header() {
             alignItems="center"
             gridTemplateColumns="repeat(6, 1fr)"
         >
-            <Box class="emptyBox"></Box>
+            <Box classNameName="emptyBox"></Box>
             <Link href="/"><img src={logo} alt='main_logo'></img></Link>
-            <Box class="emptyBox"></Box>
-            <Box class="emptyBox"></Box>
-            <Box class="emptyBox"></Box>
+            <Box className="emptyBox"></Box>
+            <Box className="emptyBox"></Box>
+            <Box className="emptyBox"></Box>
             <Box
-                class="userArea"
+                className="userArea"
                 alignSelf="center"
             >
                 <AccountCircleIcon fontSize="large"></AccountCircleIcon>

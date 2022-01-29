@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "./layout/Header";
 import HeaderNav from "./layout/HeaderNav";
+import IndexSlider from "./layout/IndexSlider";
 
 function App() {
     return (
-        <body>
+        <section>
             <Header></Header>
             <HeaderNav></HeaderNav>
-        </body>
+            <IndexSlider></IndexSlider>
+        </section>
     );
 }
 
