@@ -3,17 +3,17 @@ import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import HeaderNav from "./layout/HeaderNav";
 import IntroduceCorp from "./layout/IntroduceCorp"
-import IndexSlider from "./layout/IndexSlider";
+import IndexCarousel from "./layout/IndexCarousel";
 
 function App() {
     return (
-        <section>
+        <div>
             <Header></Header>
             <HeaderNav></HeaderNav>
-            <IndexSlider></IndexSlider>
+            <IndexCarousel></IndexCarousel>
             <IntroduceCorp></IntroduceCorp>
             <Footer></Footer>
-        </section>
+        </div>
     );
 }
 

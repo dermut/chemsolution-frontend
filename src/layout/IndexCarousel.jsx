@@ -3,7 +3,7 @@ import main_visu2 from '../images/main_visu2.jpg';
 import main_visu3 from '../images/main_visu3.jpg';
 import Carousel from 'react-material-ui-carousel';
 
-function IndexSlider() {
+function IndexCarousel() {
     var images = [
         {
             object: main_visu1,
@@ -32,4 +32,4 @@ function IndexSlider() {
     );
 }
 
-export default IndexSlider;
+export default IndexCarousel;

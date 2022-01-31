@@ -1,7 +1,9 @@
+/* Carousel */
 .carousel_image {
     min-height: 528px;
 }
 
+/* Footer */
 .footer_wrap {
     display: flex;
     flex-direction: column;
