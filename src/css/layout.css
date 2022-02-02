@@ -1,5 +1,7 @@
+/* Introduce */
 .introduce_div {
     display: grid;
+    grid-template-columns: 350px auto 350px;
 }
 
 .introduce_div h2 {
@@ -10,6 +12,19 @@
 .introduce_div p {
     letter-spacing: -0.5px;
     color: #666;
+}
+
+.introduce_content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 10px;
+    border-radius: 3px;
+    border: gray 2px solid;
+}
+
+.introduce_content > div {
+    margin: 10px;
 }
 
 /* Carousel */
