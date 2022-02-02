@@ -1,17 +1,11 @@
-import { Tab, Tabs } from '@mui/material';
+import { Box, Tab, Tabs } from '@mui/material';
 
 const tabs = [
     {
-        "label": "About Us",
-        "value": "1"
+        "label": "Products"
     },
     {
-        "label": "Products",
-        "value": "2"
-    },
-    {
-        "label": "Contact Us",
-        "value": "3"
+        "label": "Contact Us"
     }
 ];
 
@@ -23,9 +17,19 @@ const tabList = tabs.map((content, i) => {
 
 function HeaderNav() {
     return (
-        <Tabs>
-            {tabList}
-        </Tabs>
+        <Box
+            display="grid"
+            alignItems="center"
+            gridTemplateColumns="1fr 5fr"
+            paddingTop="10px"
+        >
+            <Box classNameName="emptyBox"></Box>
+            <Tabs 
+                value={false}
+            >
+                {tabList}
+            </Tabs>
+        </Box>
     );
 }
 

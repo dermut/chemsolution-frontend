@@ -10,6 +10,7 @@ function Header() {
             display="grid"
             alignItems="center"
             gridTemplateColumns="repeat(6, 1fr)"
+            paddingTop="10px"
         >
             <Box classNameName="emptyBox"></Box>
             <Link href="/"><img src={logo} alt='main_logo'></img></Link>
