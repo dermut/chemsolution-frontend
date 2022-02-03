@@ -1,7 +1,7 @@
 import logo from '../images/main_logo.png';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PersonAddAltRoundedIcon from '@mui/icons-material/PersonAddAltRounded';
-import { Link } from '@mui/material';
+import { IconButton, Link } from '@mui/material';
 import { Box } from '@mui/system';
 
 function Header() {
@@ -22,9 +22,9 @@ function Header() {
                 alignSelf="center"
             >
                 <AccountCircleIcon fontSize="large"></AccountCircleIcon>
-                <Link href="/api/user/add">
-                    <PersonAddAltRoundedIcon fontSize="large"></PersonAddAltRoundedIcon>
-                </Link>
+                <IconButton size="large">
+                    <PersonAddAltRoundedIcon/>
+                </IconButton>
             </Box>
         </Box>
     );
