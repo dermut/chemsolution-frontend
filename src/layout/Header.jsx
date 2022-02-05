@@ -2,7 +2,7 @@ import { useState } from 'react';
 import logo from '../images/main_logo.png';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import PersonAddAltRoundedIcon from '@mui/icons-material/PersonAddAltRounded';
-import { IconButton, Link, Modal, Typography } from '@mui/material';
+import { Button, IconButton, Link, Modal, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
 const style = {
@@ -14,7 +14,6 @@ const style = {
     color: 'black',
     bgcolor: 'white',
     border: '2px solid #000',
-    boxShadow: 24,
     p: 4,
 };
 
@@ -49,13 +48,29 @@ function Header() {
                     aria-labelledby="modal-modal-title"
                     aria-describedby="modal-modal-description"
                 >
-                    <Box sx={style}>
-                    <Typography id="modal-modal-title" variant="h6" component="h2">
-                        Text in a modal
-                    </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                    </Typography>
+                    <Box
+                        component="form"
+                        sx={style}
+                    >
+                        <Typography variant="h5">
+                            Join Member
+                        </Typography>
+                        <TextField
+                            id="username"
+                            label="username"
+                            variant="outlined"
+                        ></TextField>
+                        <TextField
+                            id="password"
+                            label="password"
+                            type="password"
+                        ></TextField>
+                        <Button
+                            variant="contained"
+                            color="success"
+                        >
+                            JOIN
+                        </Button>
                     </Box>
                 </Modal>
             </Box>
