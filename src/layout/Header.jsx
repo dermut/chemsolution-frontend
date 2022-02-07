@@ -21,7 +21,7 @@ function Header() {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-  
+    
     return (
         <Box 
             display="grid"
@@ -42,37 +42,40 @@ function Header() {
                 <IconButton onClick={handleOpen} size="large">
                     <PersonAddAltRoundedIcon/>
                 </IconButton>
-                <Modal
-                    open={open}
-                    onClose={handleClose}
-                    aria-labelledby="modal-modal-title"
-                    aria-describedby="modal-modal-description"
-                >
-                    <Box
-                        component="form"
-                        sx={style}
+                <form action="/api/user/add">
+                    <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
                     >
-                        <Typography variant="h5">
-                            Join Member
-                        </Typography>
-                        <TextField
-                            id="username"
-                            label="username"
-                            variant="outlined"
-                        ></TextField>
-                        <TextField
-                            id="password"
-                            label="password"
-                            type="password"
-                        ></TextField>
-                        <Button
-                            variant="contained"
-                            color="success"
+                        <Box
+                            component="form"
+                            sx={style}
                         >
-                            JOIN
-                        </Button>
-                    </Box>
-                </Modal>
+                            <Typography variant="h5">
+                                Join Member
+                            </Typography>
+                            <TextField
+                                id="username"
+                                label="username"
+                                variant="outlined"
+                            ></TextField>
+                            <TextField
+                                id="password"
+                                label="password"
+                                type="password"
+                            ></TextField>
+                            <Button
+                                variant="contained"
+                                color="success"
+                                type="submit"
+                            >
+                                JOIN
+                            </Button>
+                        </Box>
+                    </Modal>
+                </form>
             </Box>
         </Box>
     );
