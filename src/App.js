@@ -4,6 +4,7 @@ import Header from "./layout/Header";
 import HeaderNav from "./layout/HeaderNav";
 import IntroduceCorp from "./layout/IntroduceCorp"
 import IndexCarousel from "./layout/IndexCarousel";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
     return (
@@ -11,7 +12,9 @@ function App() {
             <Header></Header>
             <HeaderNav></HeaderNav>
             <IndexCarousel></IndexCarousel>
-            <IntroduceCorp></IntroduceCorp>
+            <BrowserRouter>
+                <IntroduceCorp></IntroduceCorp>
+            </BrowserRouter>
             <Footer></Footer>
         </div>
     );
