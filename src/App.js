@@ -13,10 +13,7 @@ function App() {
             <Header></Header>
             <HeaderNav></HeaderNav>
             <IndexCarousel></IndexCarousel>
-            <BrowserRouter>
-                <IntroduceCorp></IntroduceCorp>
-                <Product></Product>
-            </BrowserRouter>
+            <IntroduceCorp></IntroduceCorp>
             <Footer></Footer>
         </div>
     );
