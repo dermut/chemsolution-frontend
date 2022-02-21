@@ -13,8 +13,8 @@ function App() {
             <HeaderNav></HeaderNav>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" component={MainPage}></Route>
-                    <Route path="/product" component={Product}></Route>
+                    <Route path="" element={<MainPage />}></Route>
+                    <Route path="/product" element={<Product />}></Route>
                 </Routes>
             </BrowserRouter>
             <Footer></Footer>
