@@ -5,7 +5,6 @@ import AddUser from '../Components/user/AddUser';
 
 
 function Header() {
-    
     return (
         <Box 
             display="grid"
