@@ -2,16 +2,18 @@ import { Box, Tab, Tabs } from '@mui/material';
 
 const tabs = [
     {
-        "label": "Products"
+        "label": "Products",
+        "href": "/product"
     },
     {
-        "label": "Contact Us"
+        "label": "Contact Us",
+        "href": "/contact"
     }
 ];
 
 const tabList = tabs.map((content, i) => {
     return (
-        <Tab key={i} label={`${content.label}`} value={content.value}></Tab>
+        <Tab key={i} label={`${content.label}`} value={content.value} href={content.href}></Tab>
     );
 });
 
