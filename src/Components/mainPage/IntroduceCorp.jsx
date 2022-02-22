@@ -1,5 +1,5 @@
-import layout from '../css/layout.css';
-import subImg from '../images/sub01_img.jpg';
+import layout from '../../css/layout.css';
+import subImg from '../../images/sub01_img.jpg';
 
 function IntroduceCorp() {
     return (

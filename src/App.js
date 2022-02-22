@@ -2,9 +2,9 @@ import React from "react";
 import Footer from "./layout/Footer";
 import Header from "./layout/Header";
 import HeaderNav from "./layout/HeaderNav";
-import Product from "./layout/Product";
+import Product from "./Components/product/Product";
+import MainPage from "./Components/mainPage/MainPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MainPage from "./layout/MainPage";
 
 function App() {
     return (

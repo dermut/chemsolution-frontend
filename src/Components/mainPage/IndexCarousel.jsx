@@ -1,6 +1,6 @@
-import main_visu1 from '../images/main_visu1.jpg';
-import main_visu2 from '../images/main_visu2.jpg';
-import main_visu3 from '../images/main_visu3.jpg';
+import main_visu1 from '../../images/main_visu1.jpg';
+import main_visu2 from '../../images/main_visu2.jpg';
+import main_visu3 from '../../images/main_visu3.jpg';
 import Carousel from 'react-material-ui-carousel';
 
 function IndexCarousel() {
