@@ -1,0 +1,35 @@
+/* Left Navigation Bar */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.lnb {
+    width: 300px;
+}
+
+.empty_space {
+    width: 300px;
+}
+
+.h2_label {
+    font-family: 'nanumgothic';
+    width: 240px;
+    height: 115px;
+    text-align: left;
+    padding-left: 14px;
+    font-weight: 700;
+    line-height: 115px;
+    font-size: 30px;
+    color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url(../images/ln_about.jpg) 0 0 no-repeat;
+}
+
+.lnb > li.current > a {
+    color: #333;
+    background: url(../images/ln_bg.png) #f7f7f7 no-repeat 95% center;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+}
