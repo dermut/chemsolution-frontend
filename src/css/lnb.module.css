@@ -1,3 +1,7 @@
+li {
+    list-style: none;
+}
+
 /* Left Navigation Bar */
 .container {
     display: flex;
@@ -9,7 +13,7 @@
 }
 
 .empty_space {
-    width: 300px;
+    width: 230px;
 }
 
 .h2_label {
@@ -25,11 +29,23 @@
     box-sizing: border-box;
     overflow: hidden;
     background: url(../images/ln_about.jpg) 0 0 no-repeat;
+    margin: 0;
 }
 
-.lnb > li.current > a {
+.lnb_ul {
+    width: 240px;
+    padding: 0;
+    margin: 0;
+}
+
+.lnb_ul > li.current > a {
+    display: block;
+    padding: 20px 10px 20px 20px;
+    font-size: 15px;
     color: #333;
     background: url(../images/ln_bg.png) #f7f7f7 no-repeat 95% center;
     border-bottom: 1px solid #dbdbdb;
     border-top: 1px solid #dbdbdb;
+    font-weight: 300;
+    text-decoration: none;
 }

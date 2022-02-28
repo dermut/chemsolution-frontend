@@ -9,8 +9,10 @@ function ContactUs() {
                 <Box>
                     <div id="ln_area">
                         <h2 className={style.h2_label}>CONTACT US</h2>
-                        <ul class="ln">
-                            <li class="current"><a href="http://chemsolution.net/s3/s3_1.php">CONTACT US</a></li>
+                        <ul className={style.lnb_ul}>
+                            <li className={style.current}>
+                                <a href="/contact">CONTACT US</a>
+                            </li>
                         </ul>
                     </div>
                 </Box>
