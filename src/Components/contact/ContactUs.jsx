@@ -1,83 +1,56 @@
 import style from "../../css/lnb.module.css"
+import arrow from "../../images/arrow.png"
 import { Box } from "@mui/system";
+import { useEffect } from "react";
+
+const { kakao } = window;
 
 function ContactUs() {
+    useEffect(() => {
+        let container = document.getElementById('map');
+        let options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        
+        let map = new kakao.maps.Map(container, options);
+    }, []);
+
     return (
-        <Box className={style.container}>
-            <Box className={style.empty_space}></Box>
-            <Box className={style.lnb}>
-                <Box>
-                    <div id="ln_area">
-                        <h2 className={style.h2_label}>CONTACT US</h2>
-                        <ul className={style.lnb_ul}>
-                            <li className={style.current}>
-                                <a href="/contact">CONTACT US</a>
-                            </li>
-                        </ul>
-                    </div>
-                </Box>
-            </Box>
-            <div id="sub_layout">
-                <div id="sub_cnt">
-                    <div class="feedback">
-                        <h3 class="h3_label">CONTACT US</h3>
-                        <div class="process">
-                            <span class="home">HOME</span>
-                            <span class="arrow"><img src="http://chemsolution.net/theme/chemsolution/images/sub/arrow.png" alt=""/></span>
-                            <span class="path">CONTACT US</span>
-
+        <Box>
+            <Box className={style.sub_visual} alt="sub_image"></Box>
+            <Box className={style.container}>
+                <Box className={style.empty_space}></Box>
+                <Box className={style.lnb}>
+                    <Box>
+                        <div id="ln_area">
+                            <h2 className={style.h2_label}>CONTACT US</h2>
+                            <ul className={style.lnb_ul}>
+                                <li className={style.current}>
+                                    <a href="/contact">CONTACT US</a>
+                                </li>
+                            </ul>
                         </div>
-                        <article class="s0301 clear">
-
-                            <div class="map_wrap" id="gg_map">
-                                <script
-                                    src="https://maps.google.com/maps/api/js?key=AIzaSyC0T00zggiA9EDiEAYjfW8F_dFFf4Ui5JU&amp;language=en&amp;region=EN">
-                                </script>
-
-                                
-
-                            </div>
-                            <div class="s0301_map_text">
-                                <div class="mp_l">
-                                    <img src="http://chemsolution.net/theme/chemsolution/images/sub/company_name.png"/>Company Name
-                                </div>
-                                <div class="mp_r">ChemSolution Co., Ltd.</div>
-                            </div>
-                            <div class="s0301_map_text">
-                                <div class="mp_l">
-                                    <img src="http://chemsolution.net/theme/chemsolution/images/sub/address.png"/>Address(Zip Code)
-                                </div>
-                                <div class="mp_r">71-5, Haeryongsandan 5-ro, Haeryong-myeon, Suncheon-si, Jeollanam-do, Republic of
-                                    Korea</div>
-                            </div>
-                            <div class="s0301_map_text">
-                                <div class="mp_l">
-                                    <img src="http://chemsolution.net/theme/chemsolution/images/sub/tel.png"/>Tel</div>
-                                <div class="mp_r">82-61-726-8815</div>
-                            </div>
-                            <div class="s0301_map_text">
-                                <div class="mp_l">
-                                    <img src="http://chemsolution.net/theme/chemsolution/images/sub/fax.png"/>Fax</div>
-                                <div class="mp_r">82-61-725-8814</div>
-                            </div>
-                            <div class="s0301_map_text">
-                                <div class="mp_l">
-                                    <img src="http://chemsolution.net/theme/chemsolution/images/sub/e-mali.png"/>E-Mail</div>
-                                <div class="mp_r">chemsolution1004@naver.com</div>
-                            </div>
-                            <div class="s0301_map_text">
-                                <div class="mp_l over2">
-                                    <img src="http://chemsolution.net/theme/chemsolution/images/sub/website.png"/>Website</div>
-                                <div class="mp_r over"><span>tradekorea</span>chemsolution.tradekorea.com
-                                    <img src="http://chemsolution.net/theme/chemsolution/images/sub/dot.png"/><span>alibaba.com</span>kr1280696337blgv.trustpass.alibaba.com
+                    </Box>
+                </Box>
+                <div>
+                    <div>
+                        <div className={style.feedback}>
+                            <div className={style.sub_area}>
+                                <h1 className={style.label}>CONTACT US</h1>
+                                <div className={style.process}>
+                                    <span className={style.span}>HOME</span>
+                                    <span className={`${style.arrow} ${style.span}`}><img src={arrow} alt=""/></span>
+                                    <span className={`${style.path} ${style.span}`}>CONTACT US</span>
                                 </div>
                             </div>
-                            <div class="dot"></div>
-                        </article>
+                            <article className={style.clear}>
+                                <div id="map" className={style.map}></div>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <Box className={style.empty_space}></Box>
+            </Box>
         </Box>
     )
 }

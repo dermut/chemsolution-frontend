@@ -2,6 +2,13 @@ li {
     list-style: none;
 }
 
+/* Sub Image */
+.sub_visual {
+    display: block;
+    height: 124px;
+    background: url(../images/s01_back.jpg) 0 0 no-repeat;
+}
+
 /* Left Navigation Bar */
 .container {
     display: flex;
@@ -48,4 +55,60 @@ li {
     border-top: 1px solid #dbdbdb;
     font-weight: 300;
     text-decoration: none;
+}
+
+/* feedback */
+.feedback {
+    display: block;
+    margin-bottom: 70px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.feedback > .sub_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.feedback > .label {
+    color: #222222;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.feedback > .process {
+    margin-top: 15px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.feedback > .sub_area > .process > .span {
+    display: inline-block;
+    font-size: 15px;
+    padding-right: 5px;
+    color: #666;
+}
+
+.feedback > .process > .arrow {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    margin-top: -10px;
+}
+
+.feedback > .sub_area > .process > .path {
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.clear {
+    clear: both;
+}
+
+.map {
+    width: 700px;
+    height: 600px;
 }
