@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-최초 클론 이후에 설치 필요.\
+최초 클론 이후에 설치 필요.
 
 ### `npm start`
 
