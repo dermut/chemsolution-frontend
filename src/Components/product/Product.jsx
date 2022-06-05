@@ -1,10 +1,10 @@
 import Box from "@mui/material/Box";
-import Navbar from "./Navbar";
+import ProductNavbar from "./ProductNavbar";
 
 function Product() {
   return (
     <Box>
-      <Navbar />
+      <ProductNavbar />
       <div id="sub_cnt">
         <div className="feedback">
           <h3 className="h3_label">TOLUENE, XYLENE, #100, #150</h3>

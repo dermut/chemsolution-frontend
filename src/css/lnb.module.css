@@ -46,13 +46,16 @@ li {
 }
 
 .lnb_ul > li.current > a {
-  display: block;
-  padding: 20px 10px 20px 20px;
-  font-size: 15px;
   color: #333;
   background: url(../images/ln_bg.png) #f7f7f7 no-repeat 95% center;
   border-bottom: 1px solid #dbdbdb;
   border-top: 1px solid #dbdbdb;
+}
+
+.lnb_ul > li > a {
+  display: block;
+  padding: 20px 10px 20px 20px;
+  font-size: 15px;
   font-weight: 300;
   text-decoration: none;
 }
