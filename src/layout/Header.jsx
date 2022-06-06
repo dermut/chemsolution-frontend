@@ -12,7 +12,7 @@ function Header() {
       paddingTop="10px"
     >
       <Box classNameName="emptyBox"></Box>
-      <Link href="/">
+      <Link href={process.env.PUBLIC_URL}>
         <img src={logo} alt="main_logo"></img>
       </Link>
       <Box className="emptyBox"></Box>

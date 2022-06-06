@@ -17,7 +17,7 @@ const tabList = tabs.map((content, i) => {
       key={i}
       label={`${content.label}`}
       value={content.value}
-      href={content.href}
+      href={process.env.PUBLIC_URL + content.href}
     ></Tab>
   );
 });
