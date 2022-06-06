@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chemsolution-frontend/static/css/main.50d4ff48.css",
-    "main.js": "/chemsolution-frontend/static/js/main.17f3fb67.js",
+    "main.js": "/chemsolution-frontend/static/js/main.32668e06.js",
     "static/js/787.dafdc004.chunk.js": "/chemsolution-frontend/static/js/787.dafdc004.chunk.js",
     "static/media/main_visu3.jpg": "/chemsolution-frontend/static/media/main_visu3.71afe38e5a764606e003.jpg",
     "static/media/main_visu1.jpg": "/chemsolution-frontend/static/media/main_visu1.1a335be743f03d2e689c.jpg",
@@ -12,11 +12,11 @@
     "static/media/ln_about.jpg": "/chemsolution-frontend/static/media/ln_about.64d6d98a6cf12b968186.jpg",
     "index.html": "/chemsolution-frontend/index.html",
     "main.50d4ff48.css.map": "/chemsolution-frontend/static/css/main.50d4ff48.css.map",
-    "main.17f3fb67.js.map": "/chemsolution-frontend/static/js/main.17f3fb67.js.map",
+    "main.32668e06.js.map": "/chemsolution-frontend/static/js/main.32668e06.js.map",
     "787.dafdc004.chunk.js.map": "/chemsolution-frontend/static/js/787.dafdc004.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50d4ff48.css",
-    "static/js/main.17f3fb67.js"
+    "static/js/main.32668e06.js"
   ]
 }
